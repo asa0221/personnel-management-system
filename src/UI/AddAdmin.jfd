@@ -1,0 +1,83 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {par l {par l:l::p {seq {space :p:60:p, comp label1:::p::p, space :p:36:p}, seq t {space :::x, comp label2:::p::p, space :p:32:p}}, seq l {par t {comp label3:::p::p, comp label4:::p::p}, space :p:38:p}}, par l {comp label7:::p::p, comp label6:::p::p, comp label5:::p::p, par l:::p {comp passwordField1::l::242:x, comp textField1::::242:x, comp passwordField2::l::242:x}, comp textField2:::p:242:p, comp label8::l:p::p}}, seq l {space :p:159:p, comp button1:::p::p}}, space ::34:x}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, par b {comp label1::b:p::p, comp textField1::b:p::p}, space :::p, comp label5:::p::p, space :::p, par b {comp passwordField1::b:p::p, comp label2::b:p:30:p}, space :::p, comp label6:::p::p, space :::p, par b {comp passwordField2::b:p::p, comp label4::b:p::p}, space u:::p, comp label7:::p::p, space :::p, par b {comp textField2::b:p::p, comp label3::b:p::p}, space ::55:x, comp label8:::p::p, space :::p, comp button1:::p::p, space :p:17:p}}"
+		} ) {
+			name: "this"
+			"title": "添加管理员信息"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ID："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Password："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Name："
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Re-password:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Regist"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 320 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:17:p, comp label10:::::x, space :p:21:p}, seq l {space :p:59:p, comp button2:::p::p, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :p:42:p, comp label10:::p:33:p, space :p:32:p, comp button2:::p::p, space ::32:x}}"
+		} ) {
+			name: "dialog6"
+			"title": "succes！"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "管理员添加成功！"
+				"font": new java.awt.Font( ".AppleSystemUIFont", 1, 20 )
+				"foreground": sfield java.awt.Color red
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "OK"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 510 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+	}
+}

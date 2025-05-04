@@ -1,0 +1,183 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp dialogPane:::p:561:p, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp dialogPane:::p:353:p, space ::10:x}}"
+		} ) {
+			name: "this"
+			"title": "月报查询"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :p:98:p, comp toggleButton1:::p:125:p, space :::x, comp button1:::p:126:p, space :p:89:p}, seq l {space :::p, comp scrollPane1:::::x, space :::p}, seq t {space :0:0:x, comp YearComboBoxM:::p:105:p, space :::p, comp label1:::p:20:p, space :p:12:p, comp MonthComboBoxM:::p:86:p, space :p:18:p, comp label2:::p::p, space :p:59:p, comp flushM:::p:102:p, space :p:116:p}, seq l {space :::p, comp label3:::p:245:p, space :::x}}"
+					"$verticalGroup": "par l {seq t {space :::x, par b {comp label2::b:p::p, comp YearComboBoxM::b:p::p, comp MonthComboBoxM::b:p::p, comp label1::b:p::p, comp flushM::b:p::p}, space :::p, comp label3:::p::p, space :p:19:p, comp scrollPane1:::p:205:p, space u:::p, par b {comp toggleButton1::b:p:45:p, comp button1::b:p:45:p}, space ::65:x}}"
+				} ) {
+					name: "contentPanel"
+					"maximumSize": new java.awt.Dimension( 33340, 60000 )
+					add( new FormComponent( "javax.swing.JToggleButton" ) {
+						name: "toggleButton1"
+						"text": "切换到日报"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "turn_to_day_button", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "返回"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "YearComboBoxM"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "2022"
+							addElement( "2022" )
+							addElement( "2021" )
+							addElement( "2020" )
+							addElement( "2019" )
+							addElement( "2018" )
+							addElement( "2017" )
+							addElement( "2016" )
+							addElement( "2015" )
+						}
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "MonthComboBoxM"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "01"
+							addElement( "01" )
+							addElement( "02" )
+							addElement( "03" )
+							addElement( "04" )
+							addElement( "05" )
+							addElement( "06" )
+							addElement( "07" )
+							addElement( "08" )
+							addElement( "09" )
+							addElement( "10" )
+							addElement( "11" )
+							addElement( "12" )
+						}
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "flushM"
+						"text": "查询报表"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "flushM", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "年"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "月"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table2"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+								add( "Year" )
+								add( "Month" )
+								add( "S_id" )
+								add( "D_id" )
+								add( "Attendance" )
+								add( "Absence" )
+								add( "Absence_fine" )
+								add( "LoE" )
+								add( "LoE_fine" )
+								add( "Days_personal_leave" )
+								add( "Days_sick_leave" )
+								add( "Attendance_fine" )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 12 )
+							"autoResizeMode": 0
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 40, 0 )
+			"size": new java.awt.Dimension( 575, 400 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::112:x, comp label5:::p:109:p, space :p:77:p}}"
+			"$verticalGroup": "par l {seq l {space :p:56:p, comp label5:::p:35:p, space ::78:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "提示页"
+			"font": new java.awt.Font( "Dialog", 2, 24 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "切换成功"
+				"foreground": new java.awt.Color( 255, 0, 0, 255 )
+				"font": new java.awt.Font( "Microsoft YaHei UI Light", 1, 22 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 300, 200 )
+			"location": new java.awt.Point( 195, 490 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::112:x, comp label6:::p:109:p, space :p:77:p}}"
+			"$verticalGroup": "par l {seq l {space :p:54:p, comp label6:::p:35:p, space ::80:x}}"
+		} ) {
+			name: "dialog2"
+			"title": "提示页"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"foreground": new java.awt.Color( 255, 0, 0, 255 )
+				"font": new java.awt.Font( "Microsoft YaHei UI Light", 1, 22 )
+				"text": "生成成功"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 300, 200 )
+			"location": new java.awt.Point( 195, 715 )
+		} )
+	}
+}

@@ -1,0 +1,164 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.4.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:25:p, par l {seq {comp label3:::p::p, space :::x}, seq t {comp scrollPane1:::::x, space s:::p, par l:::p {seq {comp label4:::p::p, space :::p, comp textField1:::p:91:p}, seq l {comp label5:::p:65:p, space :::p, par l {comp button1:::p::p, comp textField2:::::x}}}}, seq t {comp comboBox1:::p::p, space :::p, comp label1:::p::p, space :::p, comp comboBox2:::p::p, space :::p, comp label2:::p::p, space :::x, comp button2:::p::p, space :p:48:p}}}}"
+					"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p::p, comp comboBox1::b:p::p, comp button2::b:p::p, comp label2::b:p::p, comp comboBox2::b:p::p}, space u:::p, par t {seq {comp label3:::p::p, space u:::p, comp scrollPane1:::p:167:p}, seq {par b {comp label4::b:p::p, comp textField1::b:p:24:p}, space s:::p, par b {comp label5::b:p::p, comp textField2::b:p:24:p}, space :p:53:p, comp button1:::p::p}}, space ::16:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "2020"
+							addElement( "2020" )
+							addElement( "2021" )
+							addElement( "2022" )
+							addElement( "2023" )
+						}
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "年"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox2"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "01"
+							addElement( "01" )
+							addElement( "02" )
+							addElement( "03" )
+							addElement( "04" )
+							addElement( "05" )
+							addElement( "06" )
+							addElement( "07" )
+							addElement( "08" )
+							addElement( "09" )
+							addElement( "10" )
+							addElement( "11" )
+							addElement( "12" )
+						}
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "月"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "月度工作汇报"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea1"
+							"lineWrap": true
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "提交"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"text": "查询当月绩效状态"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "审核状态："
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "评级："
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+						"editable": false
+						"enabled": false
+						"font": new java.awt.Font( ".AppleSystemUIFont", 3, 13 )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField2"
+						"editable": false
+						"enabled": false
+						"font": new java.awt.Font( ".AppleSystemUIFont", 3, 13 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 510, 320 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:16:p, par c {comp label7::c:p::p, comp label6::c:p::p}, space ::26:x}}"
+			"$verticalGroup": "par l {seq l {space :p:51:p, comp label6:::p::p, space :::p, comp label7:::p::p, space ::66:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "提示"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "未查到当月绩效数据   "
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "请返回上一界面输入"
+				"font": #SwingDerivedFont0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 605, 0 )
+			"size": new java.awt.Dimension( 210, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l {comp label8::l:p::p, seq l {space :p:54:p, comp label9:::p::p}}, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :p:46:p, comp label8:::p::p, space u:::p, comp label9:::p::p, space ::63:x}}"
+		} ) {
+			name: "dialog2"
+			"title": "提示"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "绩效信息已经主管审核"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "无法修改"
+				"font": #SwingDerivedFont1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 610, 220 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:40:p, comp label10:::p::p, space ::57:x}}"
+			"$verticalGroup": "par l {seq l {space :p:59:p, comp label10:::p::p, space ::87:x}}"
+		} ) {
+			name: "dialog3"
+			"title": "提示"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "数据上传成功"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 2, 5, false )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 870, 0 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+	}
+}

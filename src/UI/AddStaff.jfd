@@ -1,0 +1,167 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:36:p, par l {seq {par l {comp label4:::p::p, comp label5:::p:62:p}, space :0:186:x}, seq {comp label2:::p::p, space :::p, par l {comp label13::::121:x, comp textField2::::121:x}, space :p:84:p}, comp label12::::248:x, seq {comp label1:::p::p, space :::p, comp textField1:::::x}, seq {par l {comp label3:::p::p, comp label11::l:p:40:p}, space :p:47:p, par l {comp comboBox3:::p::p, comp comboBox4::l:p:105:p, seq l {par t {comp comboBox2:::p::p, comp comboBox1:::p::p}, space :::p, comp label20::::71:x}}}}, space :p:11:p, par t:::p {seq l {comp label6:::p::p, space :::p, comp textField5:::p:226:p}, seq l {comp label7:::p::p, space u:::p, par l {comp label14:::::x, comp textField6:::::x}}, seq l {comp label8:::p::p, space :::p, par l {comp label15:::::x, comp textField7:::::x}}, seq t {comp label9::::63:x, space :::p, par l:::p {comp label17::::218:x, comp label16::::218:x, comp textField8::::218:x}}, seq t {comp label10:::p::p, space :::p, par l:::p {comp label18::::219:x, comp textField9::::219:x}}, seq t {comp button1:::p::p, space :p:51:p}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :::p, par b {comp label6::b:p::p, comp textField1::b:p::p, comp textField5::b:p::p, comp label1::b:p::p}, space :::p, par b {comp label12::b:p::p, comp label14::b:p::p}, space :::p, par b {comp textField2::b:p::p, comp label7::b:p::p, comp textField6::b:p::p, comp label2::b:p::p}, space :p:2:p, par b {comp label13::b:p::p, comp label15::b:p::p}, space s:::p, par l {par b {comp label8::b:p::p, comp textField7::b:p::p}, comp label3::l:p::p}}, seq t {space :0:0:x, comp comboBox1:::p::p}}, space :::p, comp label16:::p::p, space s:::p, par l {par b {comp label4::b:p::p, comp textField8::b:p::p, comp label9::b:p::p}, par b:t {comp comboBox2::b:p::p, comp label20::b:p:30:p}}, space :::p, comp label17:::p::p, par l {seq {par b {comp label10::b:p::p, comp textField9::b:p::p, comp label5::b:p::p}, par l {seq {space :p:1:p, comp label18:::p::p, space s:::p, comp button1:::p::p}, seq l {space s:::p, comp label11:::p::p}}, space ::72:x}, seq l {space :p:6:p, comp comboBox3:::p::p, space u:::p, comp comboBox4:::p::p, space :0:73:x}}}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "S_id"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Name"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Sex"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "D_id"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Position"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Age"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Tele"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Email"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Address"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "Password"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "M"
+					addElement( "M" )
+					addElement( "F" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox2ItemStateChanged", true ) )
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox2ItemStateChanged", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox3"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "employee"
+					addElement( "employee" )
+					addElement( "manager" )
+					addElement( "HR" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField7"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField8"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField9"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "State"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox4"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "yes"
+					addElement( "yes" )
+					addElement( "no" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label17"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label18"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 590, 370 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp label19:::p::p, space ::12:x}}"
+			"$verticalGroup": "par l {seq l {space :p:51:p, comp label19:::p:39:p, space ::79:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "Successful!"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label19"
+				"text": "员工信息添加成功！"
+				"font": new java.awt.Font( ".AppleSystemUIFont", 1, 20 )
+				"foreground": sfield java.awt.Color red
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 155, 400 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+	}
+}

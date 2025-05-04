@@ -1,0 +1,109 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par t {seq t {comp label1:::p:49:p, space :::p, comp textField1:::p:87:p, space s:::p, comp label2:::p:52:p, space :::p, comp textField2:::p:91:p, space s:::p, comp label3:::p:41:p, space :::p, comp textField3:::p:109:p, space :::x}, seq t {comp scrollPane1:::p:334:p, space u:::p, par l {comp label8:::::x, seq {par l {comp label5:::p:82:p, seq {space :6:6:p, comp button1:::p::p}, comp label6::l:p::p, comp comboBox2:::p::p, comp comboBox1:::p::p}, space :0:0:x}}, space :p:6:p}, seq {comp label4:::p:81:p, space :p:190:p, comp label7:::p::p, space :::p}}}}"
+			"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p:29:p, comp textField1::b:p::p, comp label2::b:p:30:p, comp textField2::b:p::p, comp label3::b:p:30:p, comp textField3::b:p::p}, space s:::p, par b {comp label4::b:p:34:p, comp label7::b:p::p}, space :::p, par l:::p {comp scrollPane1:::p:201:p, seq {comp label5:::p:32:p, space :::p, comp comboBox1:::p::p, space s:::p, comp label6:::p::p, space :::p, comp comboBox2:::p::p, space :::p, comp label8:::::x, space u:::p, comp button1:::p::p}}, space ::39:x}}"
+		} ) {
+			name: "this"
+			"title": "绩效审核 评级"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "S_id:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Name:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Date:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "月度工作报告"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+					"editable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "审核状态："
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "评级："
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Unreviewed"
+					addElement( "Unreviewed" )
+					addElement( "Pass" )
+					addElement( "Not Pass" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Null"
+					addElement( "Null" )
+					addElement( "A+" )
+					addElement( "A" )
+					addElement( "B" )
+					addElement( "C" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "未改变审核状态点击确定默认  不通过"
+				"foreground": new java.awt.Color( 0, 0, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 500, 365 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:27:p, comp label21:::p::p, space ::31:x}}"
+			"$verticalGroup": "par l {seq l {space :p:53:p, comp label21:::p:39:p, space ::77:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "Successful!"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label21"
+				"text": "绩效审核完成！"
+				"font": new java.awt.Font( ".AppleSystemUIFont", 1, 20 )
+				"foreground": sfield java.awt.Color red
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 370 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+	}
+}

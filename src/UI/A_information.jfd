@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1::::386:x, space :::p}, seq t {space :p:32:p, comp button2:::p::p, space :::x, comp button1:::p::p, space :p:51:p}}"
+			"$verticalGroup": "par l {seq l {comp scrollPane1:::p:238:p, space ::10:x, par b {comp button1::b:p::p, comp button2::b:p::p}, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "管理员信息表"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "Administrator_id" )
+						add( "Administrator_password" )
+						add( "Administrator_name" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( true )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 105, 0, 0, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 140, 0, 0, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 120, 0, 0, true ) )
+					} )
+					"enabled": false
+					"focusable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "返回"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "信息查找"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 315 )
+		} )
+	}
+}

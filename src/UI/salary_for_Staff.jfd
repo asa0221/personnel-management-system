@@ -1,0 +1,154 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.4.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:100:p, comp button3:::p:142:p, space ::128:x, comp button2:::p:110:p, space :p:118:p}, seq l {space :p:15:p, par t {comp scrollPane1:::p:550:p, par l:t {comp label1:::p:328:p, seq {comp comboBox2:::p:133:p, space :::p, comp label3:::p:32:p, space :p:79:p, comp comboBox3:::p::p, space s:::p, comp label5:::p:30:p, space :::p, comp label4:::p::p, space :p:54:p, comp button1:::p:105:p}}}, space ::33:x}}"
+			"$verticalGroup": "par l {seq l {par l {seq l {space :29:29:p, comp label4:::p:30:p, space ::17:x}, seq {par l {par b:t {comp label3::b:p:43:p, comp comboBox3::b:::x}, seq l {space :p:15:p, comp button1:::p:44:p, space :0:9:x}, seq t {space :::x, comp label5:::p:43:p}, seq t {space :0:0:x, comp comboBox2:::p:42:p}}, space :p:8:p}}, comp label1:::p::p, space u:::p, comp scrollPane1:::p:157:p, space s:::p, par l:::p {comp button2::::38:x, comp button3::::38:x}, space ::33:x}}"
+		} ) {
+			name: "this"
+			"title": "员工月工资查询"
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "2022"
+					addElement( "2022" )
+					addElement( "2021" )
+					addElement( "2020" )
+					addElement( "2019" )
+					addElement( "2018" )
+				}
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "年"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox3"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "01"
+					addElement( "01" )
+					addElement( "02" )
+					addElement( "03" )
+					addElement( "04" )
+					addElement( "05" )
+					addElement( "06" )
+					addElement( "07" )
+					addElement( "08" )
+					addElement( "09" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "月"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "Year" )
+						add( "Month" )
+						add( "S_id" )
+						add( "Name" )
+						add( "D_id" )
+						add( "D_name" )
+						add( "Basic_salary\t" )
+						add( "Rate" )
+						add( "Bonus" )
+						add( "Bonus_salary" )
+						add( "Attendance_fine" )
+						add( "Before_tax" )
+						add( "tax_rate" )
+						add( "tax" )
+						add( "After_tax" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"autoResizeMode": 0
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "执行查询"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "返回"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "生成月报统计图"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 600, 365 )
+		} )
+	}
+}

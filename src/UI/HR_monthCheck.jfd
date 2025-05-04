@@ -1,0 +1,153 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "薪资核算"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:22:p, comp label4:::p:306:p, space u:::p, par l {seq {space :p:96:p, comp button1:::p:106:p}, seq l {comp label6:::p::p, space u:::p, comp textField1:::p:119:p}}, space :0:0:x}, seq t {space :0:0:x, comp label3:::::p, space :::p, comp comboBox1:::p:85:p, space :::p, comp label1:::p:22:p, space :::p, comp comboBox2:::p:87:p, space :::p, comp label2:::p:52:p, space :::p, comp label7:::p::p, space u:::p, comp comboBox3:::p:125:p, space :p:77:p}}"
+					"$verticalGroup": "par l {seq t {space :::p, par b {comp label3::b:p:47:p, comp comboBox1::b:p::p, comp label1::b:p:30:p, comp label2::b:p:30:p, comp comboBox2::b:p::p, comp label7::b:p::p, comp comboBox3::b:p::p}, space :::p, comp label4:::p:37:p, space :p:77:p}, seq l {space :p:53:p, par b {comp textField1::b:p::p, comp label6::b:p::p}, space :::p, comp button1::::43:x, space :p:53:p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "2020"
+							addElement( "2020" )
+							addElement( "2021" )
+							addElement( "2022" )
+							addElement( "2023" )
+						}
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox2"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "01"
+							addElement( "01" )
+							addElement( "02" )
+							addElement( "03" )
+							addElement( "04" )
+							addElement( "05" )
+							addElement( "06" )
+							addElement( "07" )
+							addElement( "08" )
+							addElement( "09" )
+							addElement( "10" )
+							addElement( "11" )
+							addElement( "12" )
+						}
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "年"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "月"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "选择月份"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 4, false )
+						"background": new java.awt.Color( 0, 0, 0, 255 )
+						"foreground": sfield java.awt.Color black
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "核算工资"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "注：查询前请确保员工考勤及绩效信息完整，否则将无法执行成功"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -3, false )
+						"foreground": new java.awt.Color( 255, 51, 51, 255 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "职工号："
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox3"
+						addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox3ItemStateChanged", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": "员工姓名："
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 585, 240 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::112:x, comp label5:::p:109:p, space :p:77:p}}"
+			"$verticalGroup": "par l {seq l {space :p:56:p, comp label5:::p:35:p, space ::78:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "提示页"
+			"font": &Font0 new java.awt.Font( "Dialog", 2, 24 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "核算成功"
+				"foreground": &Color0 new java.awt.Color( 255, 0, 0, 255 )
+				"font": &Font1 new java.awt.Font( "Microsoft YaHei UI Light", 3, 17 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": &Dimension0 new java.awt.Dimension( 300, 200 )
+			"location": new java.awt.Point( 90, 260 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::97:x, comp label8:::p:109:p, space :p:92:p}}"
+			"$verticalGroup": "par l {seq l {space :p:56:p, comp label8:::p:35:p, space ::78:x}}"
+		} ) {
+			name: "dialog2"
+			"title": "提示页"
+			"font": #Font0
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "该员工不存在"
+				"foreground": #Color0
+				"font": #Font1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": #Dimension0
+			"location": new java.awt.Point( 95, 480 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::7:x, comp label9:::p:285:p, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :p:57:p, comp label9:::p:35:p, space ::77:x}}"
+		} ) {
+			name: "dialog3"
+			"title": "提示页"
+			"font": #Font0
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "请检查该员工该月考勤或绩效信息"
+				"foreground": #Color0
+				"font": new java.awt.Font( "Microsoft YaHei UI Light", 3, 15 )
+				"horizontalAlignment": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": #Dimension0
+			"location": new java.awt.Point( 430, 265 )
+		} )
+	}
+}

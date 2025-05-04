@@ -1,0 +1,166 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :::p, comp label1:::p:34:p, space :::p, comp textField1:::p:286:p}, seq l {space :p:137:p, comp button2:::p::p}}, space ::26:x}}"
+			"$verticalGroup": "par l {seq l {space :p:47:p, par b {comp label1::b:p:37:p, comp textField1::b:p::p}, space ::29:x, comp button2:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "输入想要删除员工的职工号"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ID："
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "查找"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 360, 180 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane1::l::358:x, seq l {space :p:132:p, comp button1:::p::p, space :::x}}"
+			"$verticalGroup": "par l {seq l {comp scrollPane1:::p:124:p, space :::p, comp button1:::p::p, space :0:9:x}}"
+		} ) {
+			name: "frame1"
+			"title": "搜索结果"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "S_id" )
+						add( "Name" )
+						add( "Sex" )
+						add( "D_id" )
+						add( "Position" )
+						add( "Age" )
+						add( "Telephone" )
+						add( "Email" )
+						add( "Address" )
+						add( "Password" )
+						add( "State" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"autoCreateRowSorter": true
+					"fillsViewportHeight": true
+					"doubleBuffered": true
+					"dragEnabled": true
+					"preferredScrollableViewportSize": new java.awt.Dimension( 491, 400 )
+					"autoResizeMode": 0
+					"alignmentX": 5.0f
+					"surrendersFocusOnKeystroke": true
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确认删除"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 185 )
+			"size": new java.awt.Dimension( 360, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp label21:::p::p, space ::12:x}}"
+			"$verticalGroup": "par l {seq l {space :p:52:p, comp label21:::p:39:p, space ::78:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "Successful！"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label21"
+				"text": "员工信息删除成功！"
+				"font": new java.awt.Font( ".AppleSystemUIFont", 1, 20 )
+				"foreground": sfield java.awt.Color red
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 365, 0 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:35:p, comp label22:::p::p, space ::43:x}}"
+			"$verticalGroup": "par l {seq l {space :p:50:p, comp label22:::p:39:p, space ::80:x}}"
+		} ) {
+			name: "dialog2"
+			"title": "Waring!"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label22"
+				"text": "员工不存在！"
+				"font": new java.awt.Font( ".AppleSystemUIFont", 1, 20 )
+				"foreground": sfield java.awt.Color red
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 385 )
+			"size": new java.awt.Dimension( 200, 200 )
+		} )
+	}
+}

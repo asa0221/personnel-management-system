@@ -1,0 +1,76 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.4.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1::::386:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1::::257:x, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "部门成员信息"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "S_id" )
+						add( "Name" )
+						add( "Sex" )
+						add( "D_id" )
+						add( "Position" )
+						add( "Age" )
+						add( "Telephone" )
+						add( "Email" )
+						add( "Address" )
+						add( "State" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"autoCreateRowSorter": true
+					"fillsViewportHeight": true
+					"doubleBuffered": true
+					"dragEnabled": true
+					"preferredScrollableViewportSize": new java.awt.Dimension( 491, 400 )
+					"autoResizeMode": 0
+					"alignmentX": 5.0f
+					"surrendersFocusOnKeystroke": true
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

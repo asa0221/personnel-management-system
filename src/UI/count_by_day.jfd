@@ -1,0 +1,159 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:84:p, comp button2:::p:125:p, space :::x, comp button3:::p:114:p, space :p:128:p}, seq l {space :::p, comp scrollPane1::::626:x, space :::p}, seq l {space :p:9:p, comp comboBoxyear:::p:101:p, space :::p, comp label1:::p:38:p, space :p:4:p, comp comboBoxmonth:::p::p, space :::p, comp label2:::p:37:p, space :::p, comp comboBoxday:::p:80:p, space s:::p, comp label3:::p:29:p, space ::42:x, comp button1:::p::p, space :p:98:p}, seq l {space :p:15:p, comp label4:::p:313:p, space ::310:x}}"
+			"$verticalGroup": "par l {seq t {space :::p, par b {comp button1::b:p:37:p, comp label2::b:p:37:p, comp comboBoxyear::b:p:37:p, comp label1::b:p:37:p, comp comboBoxmonth::b:p:37:p, comp label3::b:p:37:p, comp comboBoxday::b:p:37:p}, space :p:8:p, comp label4:::p::p, space u:::p, comp scrollPane1:::p:137:p, space s:::p, par t {comp button3:::p:47:p, comp button2:::p:47:p}, space :p:49:p}}"
+		} ) {
+			name: "this"
+			"title": "日报查询"
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxyear"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "2022"
+					addElement( "2022" )
+					addElement( "2021" )
+					addElement( "2020" )
+					addElement( "2019" )
+					addElement( "2018" )
+					addElement( "2017" )
+					addElement( "2016" )
+					addElement( "2015" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxmonth"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "1"
+					addElement( "1" )
+					addElement( "2" )
+					addElement( "3" )
+					addElement( "4" )
+					addElement( "5" )
+					addElement( "6" )
+					addElement( "7" )
+					addElement( "8" )
+					addElement( "9" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxday"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "1"
+					addElement( "1" )
+					addElement( "2" )
+					addElement( "3" )
+					addElement( "4" )
+					addElement( "5" )
+					addElement( "6" )
+					addElement( "7" )
+					addElement( "8" )
+					addElement( "9" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+					addElement( "13" )
+					addElement( "14" )
+					addElement( "15" )
+					addElement( "16" )
+					addElement( "17" )
+					addElement( "18" )
+					addElement( "19" )
+					addElement( "20" )
+					addElement( "21" )
+					addElement( "22" )
+					addElement( "23" )
+					addElement( "24" )
+					addElement( "25" )
+					addElement( "26" )
+					addElement( "27" )
+					addElement( "28" )
+					addElement( "29" )
+					addElement( "30" )
+					addElement( "31" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "年"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "月"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "日"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "查询日报"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "checkMouseClicked", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "S_id" )
+						add( "Time" )
+						add( "Attendance" )
+						add( "D_name" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "切换到月报"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "turn_to_month_button", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "返回"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 0 )
+			"size": new java.awt.Dimension( 640, 370 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::105:x, comp label5:::p:145:p, space :p:48:p}}"
+			"$verticalGroup": "par l {seq l {space :p:45:p, comp label5:::p:52:p, space ::72:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "提示页"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "切换成功"
+				"foreground": new java.awt.Color( 255, 0, 0, 255 )
+				"font": new java.awt.Font( "Microsoft YaHei UI Light", 1, 22 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 205, 420 )
+			"size": new java.awt.Dimension( 300, 200 )
+		} )
+	}
+}

@@ -1,0 +1,109 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.4.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:25:p, comp comboBox3:::p::p, space :::p, comp label3:::p::p, space :::p, comp comboBox4:::p:66:p, space :::p, comp label4:::p::p, space :::p, comp label1::::136:x, space :p:28:p, comp button1:::p:61:p, space :::p, comp button2:::p:89:p}, seq {space :::p, comp scrollPane1::::531:x}}, space :::p}}"
+			"$verticalGroup": "par l {seq t {space :0:15:x, par l {par b:t {comp comboBox3::b:p::p, comp label3::b:p::p}, par b:t {comp comboBox4::b:p::p, comp label4::b:p::p, comp label1::b:p::p, comp button1::b:p::p, comp button2::b:p::p}}, space :p:12:p, comp scrollPane1:::p:212:p}}"
+		} ) {
+			name: "this"
+			"title": "员工绩效"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "S_id" )
+						add( "名字" )
+						add( "审核状态" )
+						add( "评级" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"selectionForeground": sfield java.awt.Color black
+					addEvent( new FormEvent( "javax.swing.event.AncestorListener", "ancestorAdded", "table1AncestorAdded", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "年"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "月"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox3"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "2020"
+					addElement( "2020" )
+					addElement( "2021" )
+					addElement( "2022" )
+					addElement( "2023" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox4"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "01"
+					addElement( "01" )
+					addElement( "02" )
+					addElement( "03" )
+					addElement( "04" )
+					addElement( "05" )
+					addElement( "06" )
+					addElement( "07" )
+					addElement( "08" )
+					addElement( "09" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "查询"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "审核 评级"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 545, 300 )
+		} )
+	}
+}

@@ -1,0 +1,286 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:138:p, comp button2:::p::p}, seq l {space :p:25:p, comp label19:::p::p, space s:::p, par l {comp textField3:::p:256:p, seq {space :6:6:p, comp label20:::p:240:p}}}}, space ::36:x}}"
+			"$verticalGroup": "par l {seq l {space :p:51:p, par b {comp label19::b:p::p, comp textField3::b:p::p}, space :::p, comp label20:::p::p, space ::26:x, comp button2:::p::p, space :p:31:p}}"
+		} ) {
+			name: "this"
+			"title": "按员姓名查找"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label19"
+				"text": "name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "查找"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 370, 205 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp label4:::p::p, par l:::p {seq l {par l {comp label2::l:p::p, comp label3::l:p::p}, space :::p, par l:::p {seq t {space :0:0:x, par l:::p {comp comboBox2:::::x, comp comboBox1:::::x}, space :::p, comp label22:::p:96:p}, comp label13::::217:x, comp textField2::::217:x}}, seq l {comp label1:::p::p, space s:::p, par l {comp label12::::213:x, comp textField1:::::x}}}, seq l {par l {comp label5:::p::p, comp label11::t:p::p}, space s:::p, par l:::p {comp comboBox3:::::x, comp comboBox4:::::x}}}, space :p:22:p, par t {par l:t::p {seq {comp label6:::p::p, space :::p, comp textField5:::p:226:p}, seq l {comp label7:::p::p, space u:::p, par l {comp label14:::::x, comp textField6:::::x}}, seq l {comp label8:::p::p, space :::p, par l {comp label15:::::x, comp textField7:::::x}}}, seq t {comp label9:::p::p, space :::p, par l:::p {comp label17::::218:x, comp label16::::218:x, comp textField8::::218:x}}, seq t {comp label10:::p::p, space :::p, par l:::p {comp label18::::219:x, comp textField9::::219:x}}, comp button1::t:p::p}, space ::19:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p::p, comp label6::b:p::p, comp textField1::b:p::p, comp textField5::b:p::p}, space :::p, par b {comp label12::b:p::p, comp label14::b:p::p}, space :::p, par b {comp label2::b:p::p, comp textField2::b:p::p, comp label7::b:p::p, comp textField6::b:p::p}, space :p:2:p, par b {comp label13::b:p::p, comp label15::b:p::p}, space :::p, par b {comp label3::b:p::p, comp label8::b:p::p, comp comboBox1::b:p::p, comp textField7::b:p::p}, space :::p, comp label16:::p::p, space :::p, par b {comp label4::b:p::p, comp comboBox2::b:p::p, comp textField8::b:p::p, comp label9::b:p::p, comp label22::b:p:30:p}, space :::p, comp label17:::p::p, space :::p, par b {comp label5::b:p::p, comp label10::b:p::p, comp textField9::b:p::p, comp comboBox3::b:p::p}, par l {seq {space s:::p, par b {comp label11::b:p::p, comp comboBox4::b:p::p}}, seq l {space :p:1:p, comp label18:::p::p, space :p:13:p, comp button1:::p::p}}, space ::91:x}}"
+		} ) {
+			name: "this2"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "S_id"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Sex"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "D_id"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Position"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Age"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Tele"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Email"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Address"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "M"
+					addElement( "M" )
+					addElement( "F" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox2ItemStateChanged", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox3"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "employee"
+					addElement( "employee" )
+					addElement( "manager" )
+					addElement( "HR" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField5"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField7"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField8"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField9"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "State"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox4"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "yes"
+					addElement( "yes" )
+					addElement( "no" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label17"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label18"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label22"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 590, 370 )
+			"location": new java.awt.Point( 0, 220 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp label21:::p::p, space ::12:x}}"
+			"$verticalGroup": "par l {seq l {space :p:51:p, comp label21:::p:39:p, space ::79:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "Successful!"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label21"
+				"text": "员工信息修改成功！"
+				"font": new java.awt.Font( ".AppleSystemUIFont", 1, 20 )
+				"foreground": sfield java.awt.Color red
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 200, 200 )
+			"location": new java.awt.Point( 0, 607 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::152:x, comp button3:::p::p, space :p:148:p}, seq l {space :::p, comp scrollPane1::::366:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {comp scrollPane1:::p:177:p, space :::p, comp button3:::::x, space :::p}}"
+		} ) {
+			name: "frame1"
+			"title": "选择员工"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "S_id" )
+						add( "Name" )
+						add( "Sex" )
+						add( "D_id" )
+						add( "Position" )
+						add( "Age" )
+						add( "Telephone" )
+						add( "Email" )
+						add( "Address" )
+						add( "Password" )
+						add( "State" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"autoCreateRowSorter": true
+					"fillsViewportHeight": true
+					"doubleBuffered": true
+					"dragEnabled": true
+					"preferredScrollableViewportSize": new java.awt.Dimension( 491, 400 )
+					"autoResizeMode": 0
+					"alignmentX": 5.0f
+					"surrendersFocusOnKeystroke": true
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "修改"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 590, 5 )
+			"size": new java.awt.Dimension( 380, 250 )
+		} )
+	}
+}

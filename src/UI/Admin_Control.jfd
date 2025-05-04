@@ -1,0 +1,225 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane1::t::653:x}"
+			"$verticalGroup": "par l {seq {space :::p, comp scrollPane1::::326:x, space :p:21:p}}"
+		} ) {
+			name: "this"
+			"title": "员工信息表"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"autoscrolls": true
+				"horizontalScrollBarPolicy": 32
+				"verticalScrollBarPolicy": 22
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "S_id" )
+						add( "Name" )
+						add( "Sex" )
+						add( "D_id" )
+						add( "Position" )
+						add( "Age" )
+						add( "Telephone" )
+						add( "Email" )
+						add( "Address" )
+						add( "Password" )
+						add( "State" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"fillsViewportHeight": true
+					"rowSelectionAllowed": false
+					"showHorizontalLines": false
+					"showVerticalLines": false
+					"preferredScrollableViewportSize": new java.awt.Dimension( 474, 400 )
+					"autoResizeMode": 0
+					"autoCreateRowSorter": true
+					"doubleBuffered": true
+					"dragEnabled": true
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "查找"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "通过职工号查找"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "通过人名查找"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem8"
+						"text": "通过部门查找"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem8", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "增加"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "增加员工信息"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "修改"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "通过职工号修改"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem4", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "通过人名修改"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem5", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": "删除"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "通过职工号删除"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem6", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "通过人名删除"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem7", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 655, 405 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp textField1::::211:x, space :::p}, seq l {space :p:69:p, comp button1:::p::p, space ::76:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp textField1:::p::p, space s:::p, comp button1:::p::p, space ::10:x}}"
+		} ) {
+			name: "dialog1"
+			"title": "输入职工号"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 410 )
+			"size": &Dimension0 new java.awt.Dimension( 225, 125 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp textField2::::216:x, space :::p}, seq l {space :p:70:p, comp button2:::p::p, space ::80:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp textField2:::p::p, space s:::p, comp button2:::p::p, space ::10:x}}"
+		} ) {
+			name: "dialog2"
+			"title": "输入人名"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 530 )
+			"size": new java.awt.Dimension( 230, 125 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp textField3::::211:x, space :::p}, seq l {space :p:69:p, comp button3:::p::p, space ::76:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp textField3:::p::p, space s:::p, comp button3:::p::p, space ::10:x}}"
+		} ) {
+			name: "dialog3"
+			"title": "输入部门号"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": #Dimension0
+			"location": new java.awt.Point( 0, 671 )
+		} )
+	}
+}
